@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TeamCard = ({ member }) => {
+const TeamCard = ({ member } : {member:{name: string, position: string, bio: string, image: string}}) => {
   return (
     <div className=" p-8 rounded-lg  flex w-full h-full">
       <div className="">
