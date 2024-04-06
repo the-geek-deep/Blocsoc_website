@@ -6,18 +6,12 @@ const Projects: React.FC = () => {
   const projects = [
     { id: 1, name: 'Project A', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: '/images/project_a.jpg', link: '#' },
     { id: 2, name: 'Project B', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: '/images/project_b.jpg', link: '#' },
-    // Add more projects as needed
+    // fetch projects from amdin API
   ];
 
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <Head>
-        <title>Our Projects - TechCompany</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <Header />
-
+    <div className="min-h-screen">
+      <Header active='projects' />
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">Our Projects</h1>

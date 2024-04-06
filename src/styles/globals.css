@@ -2,13 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Override the browser's default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+:root {
+  --title-color: #1977f0;
+  --bg-primary: #f6f0e6;
+  --bg-secondary: #1f1f1f;
+}
 
-/* Set fixed widths for different screen sizes */
+body {
+  background-color: var(--bg-primary);
+}
+
 @media (min-width: 640px) and (max-width: 767px) {
   /* Styles for small screens (sm) */
   html {
-    max-width: 640px; /* Set a fixed maximum width */
+    max-width: 640px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -16,6 +30,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Styles for medium screens (md) */
+
   html {
     max-width: 768px;
     margin-left: auto;
@@ -25,6 +40,7 @@
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   /* Styles for large screens (lg) */
+
   html {
     max-width: 1024px;
     margin-left: auto;
@@ -34,6 +50,7 @@
 
 @media (min-width: 1280px) and (max-width: 1439px) {
   /* Styles for extra large screens (xl) */
+
   html {
     max-width: 1280px;
     margin-left: auto;
@@ -43,6 +60,7 @@
 
 @media (min-width: 1440px) {
   /* Styles for 2xl screens (1440px and above) */
+
   html {
     max-width: 1440px;
     margin-left: auto;

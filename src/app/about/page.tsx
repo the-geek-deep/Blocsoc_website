@@ -4,25 +4,23 @@ import Header from '../../components/Header';
 
 const About: React.FC = () => {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="min-h-screen">
       <Head>
         <title>About - Paradigm.xyz</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header active='about' />
 
       <main className="container mx-auto px-4 py-8">
-        <section className="bg-white rounded-lg shadow-md p-6">
-          <h1 className="text-4xl font-bold leading-tight text-gray-900">About Paradigm.xyz</h1>
+        <section className=" rounded-lg shadow-lg p-6">
+          <h1 className="text-4xl font-bold leading-tight text-gray-900">About BlocSoc</h1>
           <p className="mt-4 text-lg text-gray-700">
-            Paradigm.xyz is a platform for exploring the latest trends and insights in technology, 
-            innovation, and entrepreneurship. We strive to provide valuable content and resources 
-            to our community of tech enthusiasts, professionals, and entrepreneurs.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi eum, voluptates suscipit eos quod recusandae sunt ab blanditiis accusamus accusantium aliquam facilis cum expedita esse harum dolor cumque! Laboriosam, est.
           </p>
         </section>
 
-        <section className="mt-12 bg-white rounded-lg shadow-md p-6">
+        <section className="mt-12 rounded-lg shadow-lg p-6">
           <h2 className="text-2xl font-bold text-gray-900">Our Mission</h2>
           <p className="mt-4 text-lg text-gray-700">
             Our mission is to empower individuals and organizations to embrace innovation 
@@ -31,7 +29,7 @@ const About: React.FC = () => {
           </p>
         </section>
 
-        <section className="mt-12 bg-white rounded-lg shadow-md p-6">
+        <section className="mt-12 rounded-lg shadow-lg p-6">
           <h2 className="text-2xl font-bold text-gray-900">Our Approach</h2>
           <p className="mt-4 text-lg text-gray-700">
             We believe in a collaborative and inclusive approach to technology. Our platform 
@@ -39,7 +37,7 @@ const About: React.FC = () => {
           </p>
         </section>
 
-        <section className="mt-12 bg-white rounded-lg shadow-md p-6">
+        <section className="mt-12 rounded-lg shadow-lg p-6">
           <h2 className="text-2xl font-bold text-gray-900">Our Values</h2>
           <ul className="mt-4 text-lg text-gray-700 list-disc list-inside">
             <li>Innovation</li>

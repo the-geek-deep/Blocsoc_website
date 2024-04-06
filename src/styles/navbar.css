@@ -1,0 +1,50 @@
+@media (min-width: 786px) {
+    .nav-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      grid-template-rows: auto auto; /* 2 rows */
+      gap: 4px 44px; /* Gap between grid items */
+      padding: 10px 0px; /* Padding for the container */
+      border-top: 1px solid #a9b7c5;
+      border-bottom: 1px solid #a9b7c5;
+    }
+   
+}
+
+.active{
+    font-weight: 700;
+    
+}
+@media (max-width: 785px) {    
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        background-color: var(--bg-primary); 
+        color:black;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+        border-right: 1px solid #a9b7c5;
+        box-shadow: 0 2px 24px rgba(0, 0, 0, 0.629);
+    }
+
+    .overlay-content{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+
+      .overlay-content {
+          width: 100%; /* 100% width */
+          text-align: center; /* Centered text/links */
+          margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+          margin-top:auto;
+          margin-bottom:auto;
+      }
+      .overlay-open{
+        width: 8rem;
+      }
+}

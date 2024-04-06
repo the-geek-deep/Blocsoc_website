@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header active='home' />
 
       <main className="container mx-auto px-4 py-8">
         <section>

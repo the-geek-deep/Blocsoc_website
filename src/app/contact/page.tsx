@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header active='contact' />
 
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-3xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
